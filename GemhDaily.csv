@@ -1,0 +1,13 @@
+searchStart=0
+searchStop=25
+filePathLocal=C:/Users/Aggelos/workspace/GemhDaily/
+metadataFileLocal=C:/Users/Aggelos/workspace/GemhDaily/
+filePathPdfLocal=C:/Users/Aggelos/workspace/GemhScrap/Pdf/
+filePathExportLocal=C:/Users/Aggelos/workspace/GemhDaily/Export/
+filePathServer=/home/tzanis/GemhDaily/Csv
+metadataFileServer=/home/tzanis/GemhDaily/
+filePathPdfServer=/home/tzanis/GemhDaily/Pdf/
+filePathExportServer=/home/tzanis/GemhDaily/Export/
+filePathConfigurationServer=/home/tzanis/GemhDaily/file.txt
+ffPath=/usr/bin/firefox
+displayNum=25
