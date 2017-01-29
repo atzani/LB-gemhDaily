@@ -37,6 +37,7 @@ public class GemhDailyMain {
     		
     		boolean driversOk = false;
         	
+    		// wait until driver is initialization complete and driver is ready for use
     		while(!driversOk){
         		try{
 					driver = hm.initializeDriver();

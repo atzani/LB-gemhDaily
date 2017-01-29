@@ -105,7 +105,7 @@ public class DailySearch {
 			
 			driver.get(mainLink);														//Driver visit mainLink
 			
-			/** in server mode check if firefox and Xvfb is working **/
+			/** in server mode check if driver is working **/
 			if (!pc.local){
 				hm.driverCheck(driver);
 				filepath = pc.filePathConfigurationServer;								// Gsis search configuration filepath
@@ -369,6 +369,10 @@ public class DailySearch {
 					}
 							
 					/*if (pc.gemhDetails){
+					 * 	try {
+							if (individual.equalsIgnoreCase("Φυσικό Πρόσωπο") && companyType == null){
+								companyType = "FR";
+							}
 						try {
 							new RelatedFiles(driver, gd, (resultsLink + companyGemi), vatId, companyGemi, companyType, gemiStartDate, gemiStartDate, mainId,  bufferedWriter); 														//Call RelatedFiles class
 						} catch (IOException e) {
@@ -414,6 +418,9 @@ public class DailySearch {
 										
 						if (pc.gemhDetails){
 							try {
+								if (individual.equalsIgnoreCase("Φυσικό Πρόσωπο") && companyType == null){
+									companyType = "FR";
+								}
 								new RelatedFiles(driver, gd, (resultsLink + companyGemi), vatId, companyGemi, companyType, gemiStartDate, gemiStartDate, mainId,  bufferedWriter); 														//Call RelatedFiles class
 							} catch (IOException e) {
 								e.printStackTrace();

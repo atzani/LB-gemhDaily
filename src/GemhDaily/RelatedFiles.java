@@ -47,9 +47,14 @@ public class RelatedFiles {
 		java.sql.Date dt2 = new java.sql.Date(System.currentTimeMillis());
 		scrappingDate = dt2.toString();
 		
+		//In case we have not gemh date we use the current date for the pdf file name
+		if(start.equalsIgnoreCase("") || start.isEmpty()){
+			start = scrappingDate;
+		}
+		
 		driverDetails.get(resultsLink);										//Driver visit resultsLink
 		
-		/** in server mode check if firefox and Xvfb is working **/
+		/** in server mode check if driver is working **/
 		if (!pc.local){
 			hm.driverCheck(driverDetails);
 		}
